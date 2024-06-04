@@ -1,0 +1,107 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+.container{
+    max-width: 1280px;
+    padding: 0 2%;
+    margin: 0 auto;
+}
+
+.clear{clear: both;}
+
+/*Header do site*/
+header{
+    
+    background-image: url('../images/bg.jpg');
+    min-height: 400px;
+    padding: 30px 0;
+    background-size: cover;
+    background-position: center;
+}
+
+.logo{
+    background-image: url('../images/logo.png');
+    
+    background-size: 100% 100%;
+    float: left;
+    width: 130px;
+    height: 20px;
+}
+
+nav.desktop{
+    float: right;
+}
+
+nav.desktop ul{
+    list-style-type: none;
+}
+
+nav.desktop li{
+    display: inline-block;
+    margin: 0 15px;
+}
+
+nav.desktop a{
+    color: white;
+    text-decoration: none;
+}
+
+nav.desktop li.btn-nav{
+    border: 1px solid white;
+    padding: 3px 8px;
+    border-radius: 20px;
+}
+
+div.call-header {
+    padding: 110px 0;
+}
+
+div.call-header h2{
+    font-size: 47px;
+    color: white;
+    max-width: 400px;
+    font-weight: normal;
+}
+
+div.call-header p{
+    color: white;
+    font-size: 17px;
+    margin-top: 10px;
+    max-width: 600px;
+}
+
+div.call-header form{
+    margin-top: 10px;
+}
+
+div.call-header input[type=email]{
+    display: inline-block;
+    border-radius: 100px;
+    background: white;
+    width: 237px;
+    height: 35px;
+    border: 0;
+    padding-left: 10px;
+}
+
+div.call-header input[type=email]:focus{
+    outline: 0;
+}
+
+div.call-header input[type=submit]{
+    width: 181px;
+    height: 43px;
+    border-radius: 100px;
+    background-color: blueviolet;
+    color: white;
+    cursor: pointer;
+    border: 0;
+}
+
+
+
+
