@@ -2,7 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
 .container{
@@ -14,47 +14,22 @@
 .clear{clear: both;}
 
 /*Header do site*/
-header{
+header.home{
     
     background-image: url('../images/bg.jpg');
     min-height: 400px;
-    padding: 30px 0;
     background-size: cover;
     background-position: center;
 }
 
-.logo{
-    background-image: url('../images/logo.png');
-    
-    background-size: 100% 100%;
-    float: left;
-    width: 130px;
-    height: 20px;
-}
 
-nav.desktop{
-    float: right;
-}
-
-nav.desktop ul{
-    list-style-type: none;
-}
-
-nav.desktop li{
-    display: inline-block;
-    margin: 0 15px;
-}
-
-nav.desktop a{
-    color: white;
-    text-decoration: none;
-}
-
-nav.desktop li.btn-nav{
-    border: 1px solid white;
-    padding: 3px 8px;
+a.btn-nav{
+    color: aliceblue;
+    cursor: pointer;
     border-radius: 20px;
+    border: 1px solid white;
 }
+
 
 div.call-header {
     padding: 110px 0;
@@ -100,8 +75,249 @@ div.call-header input[type=submit]{
     color: white;
     cursor: pointer;
     border: 0;
+    margin: 10px auto;
 }
 
+section.descricao-spd{
+    background-color: #d1d1d1;
+    text-align: center;
+    padding-top: 10px;
+}
+
+section.descricao-spd p{
+    color: #01003b;
+    display: inline-block;
+    font-weight: lighter;
+    font-size: 24px;
+    font-style: italic;
+    max-width: 700px;
+
+}
+
+section.sobre-descricao{
+    padding: 50px 0;
+}
+
+section.sobre-descricao img{
+    float: left;
+    width: 40%;
+    max-width: 400px;
+    
+}
+
+.texto-sobre{
+    padding: 0 15px;
+    float: left;
+    width: 60%;
+}
+
+.texto-sobre h3{
+    margin-top: 30px;
+    color:#31475e;
+    font-size: 28px;
+    line-height: 32px;
+    font-weight: normal;
+}
+
+.texto-sobre p{
+    color:#6a7c92;
+    font-size: 20px;
+    line-height: 25px;
+    margin-top: 10px;
+    max-width: 700px;
+}
+
+.galeria h3{
+    color: #27435c;
+    font-size: 40px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+
+
+.slide{
+    margin-top: 350px;
+}
+
+.carousel-item img{
+    filter: brightness(50%);
+}
+
+.cursos h1{
+        color: #27435c;
+        font-size: 40px;
+        text-align: center;
+        margin-bottom: 20px;
+}
+
+.card-group{
+    margin-top: 40px;
+}
+
+.btn-card{
+    margin-top: 40px;
+}
+
+div.form-text h1{
+    color: #27435c;
+    margin-top: 70px;
+    text-align: center;
+    font-size: 60px;
+}
+
+div.form-text p{
+    font-weight: lighter;
+    color: #27435c;
+    font-size: 18px;
+    margin-top: 10px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+div.depoimento h1{
+    color:#27435c;
+    text-align: center;
+}
+
+div.depoimento{
+    position: relative;
+    width: 100%;
+    padding-bottom: 56.25%;
+    text-align: center;
+}
+
+div.depoimento video{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+
+.bi{
+    color: #000;
+    margin-right: 5px;
+}
+
+
+
+
+/*Sobre.html*/
+
+div.header-sobre h3{
+    color: #27435c;
+    margin: 20px auto;
+    text-align: center;
+    font-size: 52px;
+}
+
+div.header-sobre p{
+    color: #27435c;
+    margin: 20px auto;
+    text-align: center;
+    font-size: 20px;
+    max-width: 600px;
+    font-weight: lighter;
+    
+}
+
+div.grid-sobre{
+    margin-top: 40px;
+}
+
+div.grid-sobre img{
+    max-width: 100%;
+    height: auto;
+}
+
+div.grid-sobre h3{
+    color: #27435c;
+    font-size: 42px;
+    
+    width: 100%;
+}
+
+div.grid-sobre p{
+    font-size: 20px;
+    font-weight: lighter;
+    margin-top: 20px;
+    margin: 0 auto;
+    max-width: 400px;
+}
+
+div.grid-sobre2 img{
+    max-width: 100%;
+    height: auto;
+    
+}
+
+div.grid-sobre2 h3{
+    color: #27435c;
+    font-size: 42px;
+    margin-top: 100px;
+    width: 100%;
+}
+
+div.grid-sobre2 p{
+    font-size: 20px;
+    font-weight: lighter;
+    margin-top: 20px;
+    margin-bottom: 20px !important;
+    margin: 0 auto;
+    max-width: 400px;
+}
+
+
+/*Agenda.html*/
+
+header.agenda{
+    background-image: url('../images/bg-agenda.png');
+    min-height: 500px;
+    background-size: cover;
+    background-position: center;
+}
+
+
+
+
+
+
+
+@media screen and (max-width: 1024px) {
+    
+        .navbar {
+          background-color: #343a40;
+        }
+        .navbar-collapse .btn-nav {
+            display: block;
+            padding: 10px 20px; /* Ajuste o padding conforme necessário para manter o tamanho desejado */
+            margin-bottom: 10px; /* Adicione espaço entre os itens do menu de hamburguer */
+        }
+}
+
+@media screen and (max-width: 990px) {
+    .texto-sobre{
+        width: 100%;
+        float: none;
+        display: block;
+        margin: 0 auto;
+    }
+    section.sobre-descricao img{
+        
+        width: 100%;
+        display: block;
+        margin: 0 auto;
+        float: none;
+        max-width: 500px;
+        
+    }
+
+    .carousel{
+        margin-top: 0 !important;
+    }
+}
 
 
 
